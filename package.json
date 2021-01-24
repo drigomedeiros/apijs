@@ -1,0 +1,33 @@
+{
+  "name": "apijs",
+  "version": "1.0.0",
+  "description": "Express api",
+  "main": "./src/api.js",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-build": "webpack --mode development",
+    "dev-server": "PORT=6661 node ./dist/api.js",
+	"dev-start": "webpack --mode development && PORT=6661 node ./dist/api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drigomedeiros/apijs.git"
+  },
+  "author": "Rodrigo Medeiros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drigomedeiros/apijs/issues"
+  },
+  "homepage": "https://github.com/drigomedeiros/apijs#readme",
+  "dependencies": {
+    "webpack": "^5.15.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "express": "^4.17.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
